@@ -195,7 +195,13 @@
       <h2 class="section-title">About Me</h2>
       <div class="divider"></div>
     </div>
-    <div class="reveal" style="display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;">
+    <div class="reveal" id="about-grid" style="display:grid;grid-template-columns:1fr 420px;gap:4rem;align-items:center;">
+    <style>
+    @media(max-width:768px){
+      #about-grid{grid-template-columns:1fr !important;}
+      #about-grid img{max-height:400px;object-fit:cover;}
+    }
+    </style>
       <div>
         <p style="color:#4a5568;font-size:1.05rem;line-height:1.85;margin-bottom:1.4rem;">I'm a former high-performance judo athlete. A sport that shaped how I approach every challenge: with discipline, adaptability, and a drive to keep improving. That same mindset led me from a Bachelor's in Applied Mathematics, through a Bachelor's in Aerospace Engineering at Instituto Superior Técnico, and a year as a trainee at Lisbon Airport, to a Master's in Business Analytics at Nova SBE.</p>
         <p style="color:#4a5568;font-size:1.05rem;line-height:1.85;margin-bottom:1.4rem;">I'm drawn to complex systems and the kind of problems where data can genuinely change how decisions are made. Whether that's forecasting patient demand in a resource-limited hospital, detecting solar panels from satellite imagery, or building models that hold up under real conditions.</p>
