@@ -413,23 +413,6 @@
         </div>
       </div>
 
-      <div class="project-card reveal" onclick="openModal('hrattrition')">
-        <div class="project-card-header">
-          <div class="project-emoji">&#128202;</div>
-          <div>
-            <div class="project-type">Group Project &middot; Statistical Analysis</div>
-            <div class="project-name">Employee Attrition: Age &amp; Work-Life Balance</div>
-          </div>
-        </div>
-        <div class="project-body">
-          <div class="project-desc">Logistic regression &amp; t-test on IBM HR dataset. CEO claimed 15% churn from intl. plan holders — data showed 27.59%.</div>
-          <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Statsmodels</span><span class="project-tag">Logistic Regression</span><span class="project-tag">T-Test</span></div>
-        </div>
-        <div class="project-footer">
-          <span class="project-link">View Details <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
-        </div>
-      </div>
-
       <div class="project-card reveal" onclick="openModal('mlassignments')">
         <div class="project-card-header">
           <div class="project-emoji">&#128722;</div>
@@ -447,6 +430,22 @@
         </div>
       </div>
 
+      <div class="project-card reveal" onclick="openModal('hrattrition')">
+        <div class="project-card-header">
+          <div class="project-emoji">&#128202;</div>
+          <div>
+            <div class="project-type">Group Project &middot; Statistical Analysis</div>
+            <div class="project-name">Employee Attrition: Age &amp; Work-Life Balance</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">Logistic regression &amp; t-test on IBM HR dataset. CEO claimed 15% churn from intl. plan holders — data showed 27.59%.</div>
+          <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Statsmodels</span><span class="project-tag">Logistic Regression</span><span class="project-tag">T-Test</span></div>
+        </div>
+        <div class="project-footer">
+          <span class="project-link">View Details <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -623,11 +622,15 @@ const projects = {
       </div>
       <div class="modal-section-title">Assignment 2 — SmartRetail Customer Intelligence</div>
       <p>Full customer analytics pipeline for an e-commerce retailer: segmentation, loyalty prediction, and a hybrid recommendation system.</p>
+      <div class="modal-results">
+        <div class="result-stat"><div class="stat-number">87.18%</div><div class="stat-label">Random Forest loyalty accuracy</div></div>
+        <div class="result-stat"><div class="stat-number">4</div><div class="stat-label">Customer segments (K-Means)</div></div>
+        <div class="result-stat"><div class="stat-number">0%</div><div class="stat-label">Female subscription rate — key marketing finding</div></div>
+      </div>
       <ul>
         <li>K-Means clustering (k=4) with PCA for customer segmentation</li>
-        <li>Random Forest loyalty prediction: 87.18% accuracy</li>
         <li>Hybrid collaborative + content-based recommendation system</li>
-        <li>Key insight: female customers showed 0% subscription rate — major marketing finding</li>
+        <li>Random Forest outperformed Logistic Regression: 87.18% vs 85.51% accuracy</li>
       </ul>
       <a href="https://github.com/franciscosta/ml-assignments-nova" target="_blank" class="modal-github">${GH} View on GitHub</a>`
   }
