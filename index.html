@@ -379,6 +379,23 @@
         </div>
       </div>
 
+      <div class="project-card reveal" onclick="openModal('dataviz')">
+        <div class="project-card-header">
+          <div class="project-emoji">📊</div>
+          <div>
+            <div class="project-type">Group Project &middot; Data Visualisation</div>
+            <div class="project-name">Global Terrorism Dashboard &mdash; Tableau</div>
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-desc">Interactive Tableau dashboard exploring casualties, lethality, and attack patterns across 5 decades of global terrorism data. Fully drill-down by decade and attack type.</div>
+          <div class="project-tags"><span class="project-tag">Tableau</span><span class="project-tag">Data Visualisation</span><span class="project-tag">Dashboard Design</span><span class="project-tag">GTD Dataset</span></div>
+        </div>
+        <div class="project-footer">
+          <span class="project-link">View Details <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </div>
+      </div>
+      
       <div class="project-card reveal" onclick="openModal('advml')">
         <div class="project-card-header">
           <div class="project-emoji">&#129504;</div>
@@ -549,6 +566,30 @@ const projects = {
         <img src="app_preview.png" style="width:100%;border-radius:8px;margin:0.8rem 0;" alt="HuggingSUN app detecting solar panels on Nova SBE campus" />
       </div>
       <a href="https://github.com/franciscosta/solar-panel-detector" target="_blank" class="modal-github">${GH} View on GitHub</a>`
+  },
+  dataviz: {
+    type: "Group Project · Data Visualisation · Nova SBE",
+    title: "Global Terrorism Dashboard — Casualties & Lethality Over Time",
+    tags: ["Tableau","Dashboard Design","GTD Dataset","Temporal Analysis","Interactive"],
+    body: `<div class="modal-section-title">Overview</div>
+      <p>An interactive Tableau dashboard built on the Global Terrorism Database (GTD), analysing how casualties, lethality, and attack patterns have evolved across 5 decades (1970–2017). Built for the Data Visualisation course at Nova SBE.</p>
+      <div class="modal-section-title">What the Dashboard Does</div>
+      <p>The dashboard is designed for user-driven exploration — rather than presenting fixed conclusions, it lets the user build their own hypotheses by drilling down from global trends to specific attack types and decades. All charts update dynamically based on selections.</p>
+      <ul>
+        <li>Casualties plot — annual fatalities vs. injured, filterable by decade and attack type</li>
+        <li>Attack & weapon type plot — breakdown of attack frequency by weapon used</li>
+        <li>Number of attacks vs. effectiveness and lethality over time, split by decade</li>
+        <li>Tooltips show weapon type detail, annual effectiveness, and lethality % per selection</li>
+      </ul>
+      <div class="modal-section-title">Example Insight</div>
+      <p>Filtering to Armed Assault in the 2000s reveals the impact of the post-9/11 period — a sharp spike in casualties in 2007, with firearms as the dominant weapon type (2,966 uses) and lethality rates remaining above 63% throughout the decade.</p>
+      <div class="modal-section-title">Dashboard Demo</div>
+      <p>Below is a recording of the interactive dashboard showcasing the drill-down functionality across attack types and decades.</p>
+      <div style="background:var(--warm-white);border-radius:8px;padding:1.2rem;border:1px solid var(--border);margin:0.8rem 0;text-align:center;">
+        <video width="100%" controls preload="none" style="border-radius:8px;margin:0.8rem 0;">
+          <source src="Q1_Temporal_Analysis_Video.mp4" type="video/mp4">
+        </video>
+      </div>`
   },
   advml: {
     type: "Individual Assignment · Advanced Topics in ML · Nova SBE",
